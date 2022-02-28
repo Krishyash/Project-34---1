@@ -16,8 +16,8 @@ let firstPlayer,secondPlayer
 function preload() {
 
 arena = loadImage("Arena.jpg")
-player1 = loadAnimation("Player1.jpg","Player 1.1.jpg")
-player2 = loadAnimation("Player2.jpg","Player 2.2.jpg")
+player1 = loadAnimation("Player1.jpg","Player 1-1.jpg")
+// player2 = loadAnimation("Player2.jpg","Player 2-2.jpg")
 
 
 }
@@ -30,12 +30,13 @@ function setup() {
   world = engine.world;
   
 
-  firstPlayer = createSprite(230, 620, 100, 100);
+  firstPlayer = createSprite(230, 420, 100, 100);
   firstPlayer.addAnimation("player1", player1);
   firstPlayer.scale = 0.2;
-
+ 
   imageMode(CENTER)
 }
+
 
 
 function draw() 
